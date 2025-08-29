@@ -1,11 +1,11 @@
 <?php
 
-namespace WeLabs\PluginComposer;
+namespace PluginizeLab\PluginComposer;
 
-use WeLabs\PluginComposer\Assets;
-use WeLabs\PluginComposer\Lib\FileSystem;
-use WeLabs\PluginComposer\Lib\PluginBuilder;
-use WeLabs\PluginComposer\ShortCode;
+use PluginizeLab\PluginComposer\Assets;
+use PluginizeLab\PluginComposer\Lib\FileSystem;
+use PluginizeLab\PluginComposer\Lib\PluginBuilder;
+use PluginizeLab\PluginComposer\ShortCode;
 
 /**
  * PluginComposer class.
@@ -77,7 +77,7 @@ final class PluginComposer {
 	 */
 	public function __get( $prop ) {
 		if ( array_key_exists( $prop, $this->container ) ) {
-			return apply_filters( 'welabs_pc_container_' . $prop, $this->container[ $prop ] );
+			return apply_filters( 'pluginizelab_pc_container_' . $prop, $this->container[ $prop ] );
 		}
 	}
 
@@ -163,7 +163,7 @@ final class PluginComposer {
 		// initialize the classes
 		add_action( 'init', array( $this, 'init_classes' ), 4 );
 		add_action( 'plugins_loaded', array( $this, 'after_plugins_loaded' ) );
-		do_action( 'welabs_plugin_composer_loaded' );
+		do_action( 'pluginizelab_plugin_composer_loaded' );
 	}
 
 	/**
@@ -190,7 +190,7 @@ final class PluginComposer {
 	/**
 	 * Get the filesystem class.
 	 *
-	 * @return \WeLabs\PluginComposer\Contracts\FileSystemContract
+	 * @return \PluginizeLab\PluginComposer\Contracts\FileSystemContract
 	 */
 	public function get_file_system() {
 		if ( ! $this->file_system ) {
@@ -203,7 +203,7 @@ final class PluginComposer {
 	/**
 	 * Get the plugin builder.
 	 *
-	 * @return \WeLabs\PluginComposer\Contracts\BuilderContract
+	 * @return \PluginizeLab\PluginComposer\Contracts\BuilderContract
 	 */
 	public function get_builder() {
 		return $this->builder;

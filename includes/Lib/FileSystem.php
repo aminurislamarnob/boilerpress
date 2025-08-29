@@ -1,11 +1,11 @@
 <?php
 
-namespace WeLabs\PluginComposer\Lib;
+namespace PluginizeLab\PluginComposer\Lib;
 
 use FilesystemIterator;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
-use WeLabs\PluginComposer\Contracts\FileSystemContract;
+use PluginizeLab\PluginComposer\Contracts\FileSystemContract;
 use ZipArchive;
 
 class FileSystem implements FileSystemContract {

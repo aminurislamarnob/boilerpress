@@ -1,24 +1,24 @@
 <?php
 
-namespace WeLabs\PluginComposer\Lib;
+namespace PluginizeLab\PluginComposer\Lib;
 
-use WeLabs\PluginComposer\Contracts\BuilderContract;
-use WeLabs\PluginComposer\Contracts\FileSystemContract;
+use PluginizeLab\PluginComposer\Contracts\BuilderContract;
+use PluginizeLab\PluginComposer\Contracts\FileSystemContract;
 
 class PluginBuilder implements BuilderContract {
 
     /**
-     * @var \WeLabs\PluginComposer\Contracts\FileSystemContract
+     * @var \PluginizeLab\PluginComposer\Contracts\FileSystemContract
      */
     protected $file_system;
 
     protected $placeholders = [
-        'plugin_description' => 'Custom plugin by weLabs',
+        'plugin_description' => 'Custom plugin by PluginizeLab',
         'plugin_license' => 'GPL2',
-        'plugin_uri' => 'https://welabs.dev',
-        'plugin_author_name' => 'WeLabs',
-        'plugin_author_email' => 'contact@welabs.dev',
-        'plugin_author_uri' => 'https://welabs.dev',
+        'plugin_uri' => 'https://aiarnob.com',
+        'plugin_author_name' => 'Aminur Islam Arnob',
+        'plugin_author_email' => 'hi@aiarnob.com',
+        'plugin_author_uri' => 'https://github.com/aminurislamarnob/',
         'plugin_requires' => '',
     ];
 

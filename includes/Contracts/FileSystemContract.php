@@ -1,6 +1,6 @@
 <?php
 
-namespace WeLabs\PluginComposer\Contracts;
+namespace PluginizeLab\PluginComposer\Contracts;
 
 interface FileSystemContract {
     /**

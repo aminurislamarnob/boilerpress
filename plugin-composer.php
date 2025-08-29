@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Plugin-composer
- * Plugin URI:  https://welabs.dev/
- * Description: Customized plugin. Powered by weLabs.
+ * Plugin URI:  https://pluginizelab.dev/
+ * Description: Customized plugin. Powered by pluginizeLab.
  * Version: 1.1.0
- * Author: weLabs
- * Author URI: https://welabs.dev/
+ * Author: pluginizeLab
+ * Author URI: https://pluginizelab.dev/
  * Text Domain: plugin-composer
  * WC requires at least: 5.0.0
  * WC tested up to: 7.6.0
@@ -13,7 +13,7 @@
  * License: GPL2
  */
 
-use WeLabs\PluginComposer\PluginComposer;
+use PluginizeLab\PluginComposer\PluginComposer;
 
 // Don't call the file directly
 if ( ! defined( 'ABSPATH' ) ) {
@@ -31,9 +31,9 @@ require_once __DIR__ . '/vendor/autoload.php';
  *
  * @return Plugin_Composer
  */
-function welabs_plugin_composer(): PluginComposer {
+function pluginizelab_plugin_composer(): PluginComposer {
 	return PluginComposer::init();
 }
 
 // Lets Go....
-welabs_plugin_composer();
+pluginizelab_plugin_composer();

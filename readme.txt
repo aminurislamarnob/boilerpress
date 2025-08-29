@@ -1,5 +1,5 @@
 # Plugin Composer - Wordpress plugin boilerplate #
-**Contributors:**  [weLabs](https://profiles.wordpress.org/welabs/), [Mahbub](https://profiles.wordpress.org/mrabbani/)
+**Contributors:**  [pluginizeLab](https://profiles.wordpress.org/pluginizelab/), [Mahbub](https://profiles.wordpress.org/mrabbani/)
 
 **Tags:** wordpress, wp-plugin, plugin-development.  
 **Requires at least:** 5.4  
@@ -20,4 +20,4 @@ You may easily generate a PSR4 auto-loading WordPress plugin by submitting a sim
 [wlb_plugin_composer submit-text='Build Plugin' class="form-class"]
 ```
 
-👉 **Official Demo Link:** Try out the [Plugin Composer](https://welabs.dev/compose-plugin/).
+👉 **Official Demo Link:** Try out the [Plugin Composer](https://pluginizelab.dev/compose-plugin/).

@@ -1,6 +1,6 @@
 <?php
 
-namespace WeLabs\PluginComposer;
+namespace PluginizeLab\PluginComposer;
 
 class Assets {
     public function __construct() {
@@ -12,14 +12,14 @@ class Assets {
         $file = PLUGIN_COMPOSER_DIR . '/assets/style.css';
         $file_url = PLUGIN_COMPOSER_PLUGIN_ASSET . '/style.css';
 
-        wp_register_style( 'welabs_plugin_composer_style', $file_url, [], filemtime( $file ) );
+        wp_register_style( 'pluginizelab_plugin_composer_style', $file_url, [], filemtime( $file ) );
     }
 
     public function enqueue_scripts() {
         global $post;
 
         if ( is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, ShortCode::NAME ) ) {
-			wp_enqueue_style( 'welabs_plugin_composer_style' );
+			wp_enqueue_style( 'pluginizelab_plugin_composer_style' );
 		}
     }
 }

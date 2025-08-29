@@ -1,6 +1,6 @@
 <?php
 
-namespace WeLabs\PluginComposer;
+namespace PluginizeLab\PluginComposer;
 
 class ShortCode {
     public const NAME = 'wlb_plugin_composer';
@@ -18,8 +18,8 @@ class ShortCode {
 				'submit-text' => 'Submit',
 			], $attr
         );
-        $error_messages = apply_filters( 'get_welabs_plugin_compose_form_errors', $this->error_messages );
-        $form_template = apply_filters( 'get_welabs_plugin_compose_form', PLUGIN_COMPOSER_TEMPLATE_DIR . '/compose-form.php' );
+        $error_messages = apply_filters( 'get_pluginizelab_plugin_compose_form_errors', $this->error_messages );
+        $form_template = apply_filters( 'get_pluginizelab_plugin_compose_form', PLUGIN_COMPOSER_TEMPLATE_DIR . '/compose-form.php' );
 
         ob_start();
         include $form_template;
@@ -43,7 +43,7 @@ class ShortCode {
 
         if ( isset( $post_data['plugin_name'] ) && $plugin_name === '' ) {
             $this->error_messages = [
-                'plugin_name' => __( 'Plugin name is required.', 'welabs-plugin-composer' ),
+                'plugin_name' => __( 'Plugin name is required.', 'pluginizelab-plugin-composer' ),
             ];
             return;
         }
@@ -58,9 +58,9 @@ class ShortCode {
         $request_data['plugin_author_uri'] = sanitize_text_field( $post_data['plugin_uri'] ?? '' );
         $request_data['plugin_requires'] = sanitize_text_field( $post_data['plugin_requires'] ?? '' );
 
-        $request_data = apply_filters( 'welabs_plugin_composer_form_data', array_filter( $request_data ) );
+        $request_data = apply_filters( 'pluginizelab_plugin_composer_form_data', array_filter( $request_data ) );
 
-        $builder = welabs_plugin_composer()->get_builder();
+        $builder = pluginizelab_plugin_composer()->get_builder();
         $builder->set_placeholders( $request_data );
         $zip_name = $builder->build( $request_data['plugin_name'] );
 

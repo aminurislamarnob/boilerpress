@@ -1,17 +1,17 @@
 {
-    "name": "welabs/plugin-composer",
-    "description": "Wp plugins developed by weLabs",
+    "name": "pluginizelab/plugin-composer",
+    "description": "Wp plugins developed by pluginizeLab",
     "license": "GPL2",
     "autoload": {
         "psr-4": {
-            "WeLabs\\PluginComposer\\": "includes/"
+            "PluginizeLab\\PluginComposer\\": "includes/"
         }
     },
     "authors": [
         {
-            "name": "weLabs",
-            "email": "contact@welabs.dev",
-            "homepage": "https://welabs.dev"
+            "name": "pluginizeLab",
+            "email": "contact@pluginizelab.dev",
+            "homepage": "https://pluginizelab.dev"
         }
     ],
     "minimum-stability": "dev",

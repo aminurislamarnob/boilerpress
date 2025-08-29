@@ -24,11 +24,11 @@
     </div>
     <div class="form-group">
         <label class="control-label" for="plugin_author_name"><?php echo esc_html__( 'Author Name', 'plugin-composer' ); ?></label>
-        <input name="plugin_author_name" id="plugin_author_name"  class="input-control" placeholder="<?php echo esc_attr__( 'weLabs', 'plugin-composer' ); ?>">
+        <input name="plugin_author_name" id="plugin_author_name"  class="input-control" placeholder="<?php echo esc_attr__( 'pluginizeLab', 'plugin-composer' ); ?>">
     </div>
     <div class="form-group">
         <label class="control-label" for="plugin_author_email"><?php echo esc_html__( 'Author Email', 'plugin-composer' ); ?></label>
-        <input name="plugin_author_email" id="plugin_author_email" type="email" class="input-control" placeholder="<?php echo esc_attr( 'contact@welabs.dev' ); ?>">
+        <input name="plugin_author_email" id="plugin_author_email" type="email" class="input-control" placeholder="<?php echo esc_attr( 'contact@pluginizelab.dev' ); ?>">
     </div>
     <div class="form-group">
         <label class="control-label" for="plugin_author_uri"><?php echo esc_html__( 'Author URL', 'plugin-composer' ); ?></label>

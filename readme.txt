@@ -1,4 +1,4 @@
-# BoilerPress - A boilerplate generator for WordPress plugin development #
+# WPBoilerPress - A boilerplate generator for WordPress plugin development #
 **Contributors:**  [Md. Aminur Islam](https://profiles.wordpress.org/aminurislam01/)
 
 ## Credits & Acknowledgments

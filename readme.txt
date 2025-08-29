@@ -1,4 +1,4 @@
-# Plugin Composer - Wordpress plugin boilerplate #
+# BoilerPress - A boilerplate generator for WordPress plugin development #
 **Contributors:**  [Md. Aminur Islam](https://profiles.wordpress.org/aminurislam01/)
 
 ## Credits & Acknowledgments

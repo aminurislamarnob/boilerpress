@@ -1,5 +1,12 @@
 # Plugin Composer - Wordpress plugin boilerplate #
-**Contributors:**  [pluginizeLab](https://profiles.wordpress.org/pluginizelab/), [Mahbub](https://profiles.wordpress.org/mrabbani/)
+**Contributors:**  [Md. Aminur Islam](https://profiles.wordpress.org/aminurislam01/)
+
+## Credits & Acknowledgments
+- Original plugin: [Plugin Composer](https://github.com/welabs-ltd/plugin-composer)  
+- Authors: [weLabs](https://profiles.wordpress.org/welabs/), [Mahbub](https://profiles.wordpress.org/mrabbani/)
+- License: GPLv2 or later  
+
+This project is a rebranded and customized fork maintained by **[Md. Aminur Islam](https://profiles.wordpress.org/aminurislam01/)**.
 
 **Tags:** wordpress, wp-plugin, plugin-development.  
 **Requires at least:** 5.4  
